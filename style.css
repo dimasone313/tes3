@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* height: 90px; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* justify-content: center; */
+  align-items: center;
+  align-content: space-between;
+  min-height: 100vh;
+  background-color: rgb(92, 114, 132);
+}
+/* box1 */
+.box {
+  /* height: 100px; */
+  /* margin: 5%; */
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 30s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: perspective(200000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(200000px) rotateY(360deg);
+  }
+}
+
+.box span {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 30%;
+  height: 35%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotatey(calc(var(--i) * 80deg)) translateZ(111px);
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, transparent, #000400);
+}
+
+.box span img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
+}
+/* =========================================================== */
+/* ================================================================== */
+
+.box2 {
+  /* height: 100px; */
+  /* margin: 5%; */
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 33s linear infinite;
+}
+
+.box2 span {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 30%;
+  height: 35%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotatey(calc(var(--i) * 80deg)) translateZ(111px);
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, transparent, #000400);
+}
+
+.box2 span img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
+}
+/* ================box3================ */
+.box3 {
+  /* height: 100px; */
+  /* margin: 5%; */
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 30s linear infinite;
+}
+
+.box3 span {
+  position: absolute;
+  top: -225px;
+  left: 0;
+  width: 30%;
+  height: 35%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotatey(calc(var(--i) * 80deg)) translateZ(111px);
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, transparent, #000400);
+}
+
+.box3 span img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
+}
+
+/* ====================box4============== */
+.box4 {
+  /* height: 100px; */
+  /* margin: 5%; */
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 33s linear infinite;
+}
+
+.box4 span {
+  position: absolute;
+  top: -335px;
+  left: 0;
+  width: 30%;
+  height: 35%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotatey(calc(var(--i) * 80deg)) translateZ(111px);
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, transparent, #000400);
+}
+
+.box4 span img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
+}
+/* ===============5====================== */
+.box5 {
+  /* height: 100px; */
+  /* margin: 5%; */
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 30s linear infinite;
+}
+
+.box5 span {
+  position: absolute;
+  top: -440px;
+  left: 0;
+  width: 30%;
+  height: 35%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotatey(calc(var(--i) * 80deg)) translateZ(111px);
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, transparent, #000400);
+}
+
+.box5 span img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
+}
+/* ======================6-----------===== */
+.box6 {
+  /* height: 100px; */
+  /* margin: 5%; */
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 33s linear infinite;
+}
+
+.box6 span {
+  position: absolute;
+  top: -525px;
+  left: 0;
+  width: 30%;
+  height: 35%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotatey(calc(var(--i) * 80deg)) translateZ(111px);
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, transparent, #000400);
+}
+
+.box6 span img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
+}
